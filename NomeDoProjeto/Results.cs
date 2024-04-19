@@ -1,4 +1,4 @@
-namespace ForecastApp;
+namespace TempoApp;
 
 public class Results
 {
