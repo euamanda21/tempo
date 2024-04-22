@@ -1,8 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="NomeDoProjeto.MainPage">
-
+             x:Class="tempo.MainPage">
+             Shell.NavBarIsVisible="false">
+    <Grid>
+    <Grid.RowDefinitions>
+    <RowDefinition Height="100"/>
+    <RowDefinition Height="*"/>
+    <RowDefinition Height="*"/>
+    <RowDefinition Height="*"/>
+    <RowDefinition Height="*"/>
+    <RowDefinition Height="*"/>
+    <RowDefinition Height="100"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+    <ColumnDefinitions Width="*">
+    <ColumnDefinitions Width="*">
+    <ColumnDefinitions Width="*">
+    <ColumnDefinitions Width="*">
+    <ColumnDefinitions Width="*">
+    </Grid.ColumnDEfinitions>
     
+        <Label x:Name="LabelGrau"
+            Grid.Row="1"
+            Grid.Column="0"
+            TextColor="Black"
+            FontSize="15"
+            FontFamily="JAi__.TTF"/>
+
+        <Label X:Name="LabelCeu"
+             Grid.Row="2"
+             Grid.Column="0"
+             TextColor="Black"
+             FontSize="15"
+             FontFamily="JAi__.TTF"/>
+ 
+    <Grid> 
+          <Image Source="dianubaldo.jpg"
+                 Aspect="AspectFill"/>
+    
+</Grid>
 
 </ContentPage>

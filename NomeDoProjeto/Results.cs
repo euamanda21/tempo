@@ -5,7 +5,7 @@ public class Results
   public int Temp {get; set;}
   public string Description {get; set;}
   public int date {get; set;}
-  public int condition_cod {get; set;}
+  public int time {get; set;}
   public int img_id {get; set;}
   public string Currently {get; set;}
   public string City {get; set;}
@@ -15,4 +15,5 @@ public class Results
   public string Sunset {get; set;}
   public string Wind_Speedy {get; set;}
   public string Wind_Direction {get; set;}
+  public string moon_phase {get; set;}
 }
