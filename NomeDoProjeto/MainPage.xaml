@@ -14,12 +14,12 @@
     <RowDefinition Height="100"/>
     </Grid.RowDefinitions>
     <Grid.ColumnDefinitions>
-    <ColumnDefinitions Width="*">
-    <ColumnDefinitions Width="*">
-    <ColumnDefinitions Width="*">
-    <ColumnDefinitions Width="*">
-    <ColumnDefinitions Width="*">
-    </Grid.ColumnDEfinitions>
+    <ColumnDefinitions Width="*"/>
+    <ColumnDefinitions Width="*"/>
+    <ColumnDefinitions Width="*"/>
+    <ColumnDefinitions Width="*"/>
+    <ColumnDefinitions Width="*"/>
+    </Grid.ColumnDefinitions>
     
         <Label x:Name="LabelGrau"
             Grid.Row="1"
