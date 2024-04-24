@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="tempo.MainPage">
+             x:Class="tempo.MainPage"
              Shell.NavBarIsVisible="false">
     <Grid>
     <Grid.RowDefinitions>
@@ -25,19 +25,46 @@
             Grid.Row="1"
             Grid.Column="0"
             TextColor="Black"
-            FontSize="15"
-            FontFamily="JAi__.TTF"/>
+            FontSize="15"/>
 
-        <Label X:Name="LabelCeu"
+        <Label x:Name="LabelCeu"
              Grid.Row="2"
              Grid.Column="0"
              TextColor="Black"
-             FontSize="15"
-             FontFamily="JAi__.TTF"/>
+             FontSize="15"/>
+
+        <Label Text="Direção"
+             Grid.Row="3"
+             Grid.Column="2"
+             TextColor="Black"
+             FontSize="15"/>
+          
+        <Label x:Name="Labeldireção"
+            Grid.Row="3"
+            Grid.Column="5"
+            TextColor="Black"
+            FontSize="15"/>
+
+        <Label Text="Lua"
+             Grid.Row="4"
+             Grid.Column="2"
+             TextColor="Black"
+             FontSize="15"/>  
+
+        <Label Text="Fase"
+             Grid.Row="4"
+             Grid.Column="2"
+             TextColor="Black"
+             FontSize="15"/>    
+        
+        <Label Text="Chuva"
+             Grid.Row="5"
+             Grid.Column="2"
+             TextColor="Black"
+             FontSize="15"/>    
+        
  
-    <Grid> 
-          <Image Source="dianubaldo.jpg"
-                 Aspect="AspectFill"/>
+    
     
 </Grid>
 
