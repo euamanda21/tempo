@@ -5,65 +5,154 @@
              Shell.NavBarIsVisible="false">
     <Grid>
     <Grid.RowDefinitions>
-    <RowDefinition Height="100"/>
     <RowDefinition Height="*"/>
+    <RowDefinition Height="80"/>
+    <RowDefinition Height="80"/>
     <RowDefinition Height="*"/>
-    <RowDefinition Height="*"/>
-    <RowDefinition Height="*"/>
-    <RowDefinition Height="*"/>
-    <RowDefinition Height="100"/>
+    <RowDefinition Height="200"/>
     </Grid.RowDefinitions>
     <Grid.ColumnDefinitions>
     <ColumnDefinitions Width="*"/>
     <ColumnDefinitions Width="*"/>
     <ColumnDefinitions Width="*"/>
-    <ColumnDefinitions Width="*"/>
-    <ColumnDefinitions Width="*"/>
     </Grid.ColumnDefinitions>
     
-        <Label x:Name="LabelGrau"
+    <Frame Grid.Row="1"
+           Grid.column="0"/>
+     <Grid>
+     <Grid.RowDefinitions>
+     <RowDefinitions Height="*"/>
+     <RowDefinitions Height="*"/>
+     </Grid.RowDefinitions>
+     <Grid.ColumnDefinitions>
+     <ColumnDefinitions Width="*"/>
+     <ColumnDefinitions Width="*"/>
+     </Grid.ColumnDefinitions>
+     <Label Text="Chuva"
+            Grid.Row="0"
+            Grid.Column="0"/>
+     <Label Text="Humidade"
             Grid.Row="1"
-            Grid.Column="0"
-            TextColor="Black"
-            FontSize="15"/>
+            Grid.Column="0"/>
+     <Label x:Name="LabelChuva"
+            Grid.Row="0"
+            Grid.Column="1"/>
+     </Grid>
+     </Frame>
 
-        <Label x:Name="LabelCeu"
-             Grid.Row="2"
-             Grid.Column="0"
-             TextColor="Black"
-             FontSize="15"/>
-
-        <Label Text="Direção"
-             Grid.Row="3"
-             Grid.Column="2"
-             TextColor="Black"
-             FontSize="15"/>
-          
-        <Label x:Name="Labeldireção"
-            Grid.Row="3"
-            Grid.Column="5"
-            TextColor="Black"
-            FontSize="15"/>
-
-        <Label Text="Lua"
-             Grid.Row="4"
-             Grid.Column="2"
-             TextColor="Black"
-             FontSize="15"/>  
-
-        <Label Text="Fase"
-             Grid.Row="4"
-             Grid.Column="2"
-             TextColor="Black"
-             FontSize="15"/>    
-        
-        <Label Text="Chuva"
-             Grid.Row="5"
-             Grid.Column="2"
-             TextColor="Black"
-             FontSize="15"/>    
-        
+      <Frame Grid.Row="1"
+           Grid.column="0"/>
+     <Grid>
+     <Grid.RowDefinitions>
+     <RowDefinitions Height="*"/>
+     <RowDefinitions Height="*"/>
+     </Grid.RowDefinitions/>
+     <Grid.ColumnDefinitions>
+     <ColumnDefinitions Width="*"/>
+     <ColumnDefinitions Width="*"/>
+     </Grid.ColumnDefinitions>
+     <Label Text="Amanhecer"
+            Grid.Row="0"
+            Grid.Column="0"/>
+     <Label Text="Anoitecer"
+            Grid.Row="1"
+            Grid.Column="0"/>
+     <Label x:Name="LabelSol"
+            Grid.Row="0"
+            Grid.Column="1"/>
+     </Grid>
+     </Frame>
  
+     <Frame Grid.Row="1"
+           Grid.column="0"/>
+     <Grid>
+     <Grid.RowDefinitions>
+     <RowDefinitions Height="*"/>
+     <RowDefinitions Height="*"/>
+     </Grid.RowDefinitions/>
+     <Grid.ColumnDefinitions>
+     <ColumnDefinitions Width="*"/>
+     <ColumnDefinitions Width="*"/>
+     </Grid.ColumnDefinitions>
+     <Label Text="Força"
+            Grid.Row="0"
+            Grid.Column="0"/>
+     <Label Text="Direção"
+            Grid.Row="1"
+            Grid.Column="0"/>
+     <Label x:Name="LabelVento"
+            Grid.Row="0"
+            Grid.Column="1"/>
+     </Grid>
+     </Frame>
+    
+     <Frame Grid.Row="1"
+           Grid.column="0"/>
+     <Grid>
+     <Grid.RowDefinitions>
+     <RowDefinitions Height="*"/>
+     <RowDefinitions Height="*"/>
+     </Grid.RowDefinitions/>
+     <Grid.ColumnDefinitions>
+     <ColumnDefinitions Width="*"/>
+     <ColumnDefinitions Width="*"/>
+     </Grid.ColumnDefinitions>
+     <Label Text="Fase"
+            Grid.Row="0"
+            Grid.Column="0"/>
+     <Label x:Name="LabelLua"
+            Grid.Row="0"
+            Grid.Column="1"/>
+     </Grid>
+     </Frame>
+
+      <Grid>
+     <Grid.RowDefinitions>
+     <RowDefinitions Height="*"/>
+     <RowDefinitions Height="*"/>
+     <RowDefinitions Height="*"/>
+     </Grid.RowDefinitions/>
+     <Grid.ColumnDefinitions>
+     <ColumnDefinitions Width="*"/>
+     <ColumnDefinitions Width="*"/>
+      <ColumnDefinitions Width="*"/>
+     </Grid.ColumnDefinitions>
+     <Label Text="Grau"
+            Grid.Row="0"
+            Grid.Column="0"/>
+     <Label Text="Tempo"
+            Grid.Row="1"
+            Grid.Column="0"/>
+     <Label Text="Apucarana, PR"
+            Grid.Row="1"
+            Grid.Column="0"/>
+     <Label x:Name="LabelGrau"
+            Grid.Row="0"
+            Grid.Column="1"/>
+     </Grid>
+     </Frame>
+
+     <Image x:Name="Labelchuva"
+            Source="diachuvoso.jpg"/>
+
+     <Image x:Name="LabelSol"
+            Source="diasol.jpg"/>
+
+     <Image x:Name="LabelNublado"
+            Source="dianublado.jpg"/>
+
+     <Image x:Name="Labelnoitechuva"
+            Source="noitechuvosa.jpg"/>
+
+     <Image x:Name="Labelnoiteestrelada"
+             Source="noiteestrelada.jpg"/>
+
+     <Image x:Name="Labelnoitenublada"
+             Source="noitenublada.jpg"/>
+
+    
+    
+       
     
     
 </Grid>
