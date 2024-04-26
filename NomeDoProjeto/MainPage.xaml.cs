@@ -4,10 +4,10 @@ namespace Tempo;
 
 public partial class MainPage : ContentPage	
 {
- 
+    
 	Resposta resposta;
 
-	const string Url="https://apihgbrasil.com/weather?woieid=455927&key=618e34cf";
+	const string Url="https://api.hgbrasil.com/weather?woieid=455927&key=618e34cf";
 
 	
 	public MainPage()
@@ -22,21 +22,20 @@ public partial class MainPage : ContentPage
 
 	void preencherTela()
 	{
-        Labelchuva.Text= resposta.results.Temp.ToString();
-	    ImgBackground.Source = "diachuvoso.jpg";
-        LabelSol.Text= resposta.results.Temp.ToString();
-	    ImgBackground.Source = "diasol.jpg";
-        LabelNublado.Text= resposta.results.Temp.ToString();
-	    Imgbackground.Source = "dianublado.jpg";
-        Labelnoitechuva.Text= resposta.results.Temp.ToString();
-	    ImgBackground.Source = "noitechuvosa.jpg";
-        Labelnoiteestrelada.Text= resposta.results.Temp.ToString();
-	    ImgBackground.Source = "noiteestrelada.jpg";
-        Labelnoitenublada.Text= resposta.results.Temp.ToString();
-	    ImgBackground.Source = "noitenublada.jpg";
+        LabelTemperatura.Text= resposta.results.Temp.ToString();
+        LabelTempo.Text= resposta.results.Description;
+        LabelData.Text= resposta.results.date;
+		LabelHora.Text= resposta.results.time;
+		LabelCidade.Text= resposta.results.City;
+		LabelHumidade.Text= resposta.results.Humidity.ToString();
+        LabelVento.Text= resposta.results.Rain;
+        LabelAmanhecer.Text= resposta.results.Sunrise;
+        LabelAnoitecer.Text= resposta.results.Sunset;
+        LabelVelocidade.Text= resposta.results. Wind_Speedy.ToString();
+		LabelDireção.Text= resposta.results.Wind_Direction.ToString();
+		LabelLua.Text= resposta.results.moon_phase;
     }
 
 	
-
 
 }

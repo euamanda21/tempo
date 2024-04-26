@@ -132,26 +132,33 @@
      </Grid>
      </Frame>
 
-     <Image x:Name="Labelchuva"
-            Source="diachuvoso.jpg"/>
+     
+     <Label x:Name="LabelTemperatura"/>
 
-     <Image x:Name="LabelSol"
-            Source="diasol.jpg"/>
+     <Label x:Name="LabelTempo"/>
 
-     <Image x:Name="LabelNublado"
-            Source="dianublado.jpg"/>
+     <Label x:Name="LabelData"/>
 
-     <Image x:Name="Labelnoitechuva"
-            Source="noitechuvosa.jpg"/>
+     <Label x:Name="LabelHora"/>
 
-     <Image x:Name="Labelnoiteestrelada"
-             Source="noiteestrelada.jpg"/>
+     <Label x:Name="LabelCidade"/>
 
-     <Image x:Name="Labelnoitenublada"
-             Source="noitenublada.jpg"/>
+     <Label x:Name="LabelHumidade"/>
+       
+     <Label x:Name=" LabelVento"/>
 
-    
-    
+     <Label x:Name="LabelAmanhecer"/>
+
+     <Label x:Name="LabelAnoitecer"/>
+       
+     <Label x:Name="LabelVelocidade"/>
+
+     <Label x:Name="LabelDireção"/>
+
+     <Label x:Name="LabelLua"/>
+       
+
+       
        
     
     
