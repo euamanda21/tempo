@@ -15,7 +15,11 @@
     <ColumnDefinitions Width="*"/>
     <ColumnDefinitions Width="*"/>
     <ColumnDefinitions Width="*"/>
-    </Grid.ColumnDefinitions>
+    </Grid.ColumnDefinitions> 
+      <Image x:Name="ImgBackground"
+             Aspect="AspectFill"/>
+
+    
     
     <Frame Grid.Row="1"
            Grid.column="0"/>

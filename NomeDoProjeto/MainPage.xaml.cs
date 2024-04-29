@@ -1,21 +1,17 @@
-﻿using TempoApp;
+﻿using System.Net;
+using TempoApp;
 
 namespace Tempo;
 
 public partial class MainPage : ContentPage	
 {
-    
+    InitializeComponent();
+	Public MainPage()
+	
 	Resposta resposta;
 
 	const string Url="https://api.hgbrasil.com/weather?woieid=455927&key=618e34cf";
-
-	
-	public MainPage()
-{
-
-		
-		InitializeComponent();
-		preencherTela();	
+    	preencherTela();	
 		
 	}
 
@@ -35,7 +31,18 @@ public partial class MainPage : ContentPage
 		LabelDireção.Text= resposta.results.Wind_Direction.ToString();
 		LabelLua.Text= resposta.results.moon_phase;
     }
-
+    async void AtualizTempo()
+	{ 
+		try
+		{
+			var httpCliente=new HttpClient();
+			var response=await HttpClient.GetAsync(url);
+			if (response.IsSucessStatusCode)
+		}
+		{
+			string content=WebResponse.Content.ReadAsStringAsyng();
+			Resposta = JsonSerialier.Deseialize<Resposta>(content);
+		}
+	}
 	
 
-}
