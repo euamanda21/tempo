@@ -1,6 +1,6 @@
 namespace TempoApp;
 
-public class Resposta
+public class  Resposta
 {
     public Results results{get; set;}
 } 

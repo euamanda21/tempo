@@ -1,25 +1,27 @@
 ﻿using System.Net;
+using System.Text.Json;
 using TempoApp;
 
 namespace Tempo;
 
 public partial class MainPage : ContentPage	
 {
-    InitializeComponent();
-	public MainPage();
-	
 	Resposta resposta;
 
 	const string Url="https://api.hgbrasil.com/weather?woieid=455927&key=618e34cf";
-    	preencherTela();
+
+	public MainPage()
+	{
+    	InitializeComponent();
+    	
 		AtualizaTempo();	
 		
 	}
 
 
-	void preencherTela()
+	void PreencherTela()
 	{
-        Label=Chuva.Text= resposta.results.Chuva.ToString();
+        LabelChuva.Text= resposta.results.Chuva.ToString();
 		LabelHumidade.Text= resposta.results.Humidade.ToString();
         LabelAmanhecer.Text= resposta.results.Amanhecer;
         LabelAnoitecer.Text= resposta.results.Amanhecer;
@@ -33,20 +35,26 @@ public partial class MainPage : ContentPage
 		LabelDireção.Text= resposta.results.Wind_Direction.ToString();
 		LabelLua.Text= resposta.results.moon_phase;
     }
-    async void AtualizaTempo();
+    async void AtualizaTempo()
 	{
 		try
+		{
+			var navegador = new HttpClient();
+			var response = await navegador.GetAsync(url);
+			if (response.IsSucessStatusCode)
+		{
+			var content = await response.Content.ReadAsStringAsync();
+			Resposta = JsonSerializer.Deserialize<Resposta>(content);
+		}
 		
-			var httpCliente=new HttpClient();
-			var response=await HttpClient.GetAsync(url);
-			if (response.IsSucessStatusCode);
+		PreencherTela();
+		}
 		
-		
-		
-			string content=WebResponse.Content.ReadAsStringAsyng();
-			Resposta = JsonSerialier.Deserialize<Resposta>(content);
-		
+		catch(exception e)
+		{
+
+		}
 	}
 	
 	
-
+}

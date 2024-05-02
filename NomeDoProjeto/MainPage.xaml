@@ -12,25 +12,25 @@
     <RowDefinition Height="200"/>
     </Grid.RowDefinitions>
     <Grid.ColumnDefinitions>
-    <ColumnDefinitions Width="*"/>
-    <ColumnDefinitions Width="*"/>
-    <ColumnDefinitions Width="*"/>
+    <ColumnDefinition Width="*"/>
+    <ColumnDefinition Width="*"/>
+    <ColumnDefinition Width="*"/>
     </Grid.ColumnDefinitions> 
       <Image x:Name="ImgBackground"
              Aspect="AspectFill"/>
 
-    
+    </Grid>
     
     <Frame Grid.Row="1"
            Grid.column="0"/>
      <Grid>
      <Grid.RowDefinitions>
-     <RowDefinitions Height="*"/>
-     <RowDefinitions Height="*"/>
+     <RowDefinition Height="*"/>
+     <RowDefinition Height="*"/>
      </Grid.RowDefinitions>
      <Grid.ColumnDefinitions>
-     <ColumnDefinitions Width="*"/>
-     <ColumnDefinitions Width="*"/>
+     <ColumnDefinition Width="*"/>
+     <ColumnDefinition Width="*"/>
      </Grid.ColumnDefinitions>
      <Label Text="Chuva"
             Grid.Row="0"
@@ -48,12 +48,12 @@
            Grid.column="0"/>
      <Grid>
      <Grid.RowDefinitions>
-     <RowDefinitions Height="*"/>
-     <RowDefinitions Height="*"/>
+     <RowDefinition Height="*"/>
+     <RowDefinition Height="*"/>
      </Grid.RowDefinitions/>
      <Grid.ColumnDefinitions>
-     <ColumnDefinitions Width="*"/>
-     <ColumnDefinitions Width="*"/>
+     <ColumnDefinition Width="*"/>
+     <ColumnDefinition Width="*"/>
      </Grid.ColumnDefinitions>
      <Label Text="Amanhecer"
             Grid.Row="0"
@@ -71,12 +71,12 @@
            Grid.column="0"/>
      <Grid>
      <Grid.RowDefinitions>
-     <RowDefinitions Height="*"/>
-     <RowDefinitions Height="*"/>
+     <RowDefinition Height="*"/>
+     <RowDefinition Height="*"/>
      </Grid.RowDefinitions/>
      <Grid.ColumnDefinitions>
-     <ColumnDefinitions Width="*"/>
-     <ColumnDefinitions Width="*"/>
+     <ColumnDefinition Width="*"/>
+     <ColumnDefinition Width="*"/>
      </Grid.ColumnDefinitions>
      <Label Text="Força"
             Grid.Row="0"
@@ -94,12 +94,12 @@
            Grid.column="0"/>
      <Grid>
      <Grid.RowDefinitions>
-     <RowDefinitions Height="*"/>
-     <RowDefinitions Height="*"/>
+     <RowDefinition Height="*"/>
+     <RowDefinition Height="*"/>
      </Grid.RowDefinitions/>
      <Grid.ColumnDefinitions>
-     <ColumnDefinitions Width="*"/>
-     <ColumnDefinitions Width="*"/>
+     <ColumnDefinition Width="*"/>
+     <ColumnDefinition Width="*"/>
      </Grid.ColumnDefinitions>
      <Label Text="Fase"
             Grid.Row="0"
@@ -112,14 +112,14 @@
 
       <Grid>
      <Grid.RowDefinitions>
-     <RowDefinitions Height="*"/>
-     <RowDefinitions Height="*"/>
-     <RowDefinitions Height="*"/>
+     <RowDefinition Height="*"/>
+     <RowDefinition Height="*"/>
+     <RowDefinition Height="*"/>
      </Grid.RowDefinitions/>
      <Grid.ColumnDefinitions>
-     <ColumnDefinitions Width="*"/>
-     <ColumnDefinitions Width="*"/>
-      <ColumnDefinitions Width="*"/>
+     <ColumnDefinition Width="*"/>
+     <ColumnDefinition Width="*"/>
+      <ColumnDefinition Width="*"/>
      </Grid.ColumnDefinitions>
      <Label Text="Grau"
             Grid.Row="0"
