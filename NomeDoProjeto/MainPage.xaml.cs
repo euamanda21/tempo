@@ -6,43 +6,47 @@ namespace Tempo;
 public partial class MainPage : ContentPage	
 {
     InitializeComponent();
-	Public MainPage()
+	public MainPage();
 	
 	Resposta resposta;
 
 	const string Url="https://api.hgbrasil.com/weather?woieid=455927&key=618e34cf";
-    	preencherTela();	
+    	preencherTela();
+		AtualizaTempo();	
 		
 	}
 
 
 	void preencherTela()
 	{
-        LabelTemperatura.Text= resposta.results.Temp.ToString();
-        LabelTempo.Text= resposta.results.Description;
-        LabelData.Text= resposta.results.date;
-		LabelHora.Text= resposta.results.time;
-		LabelCidade.Text= resposta.results.City;
-		LabelHumidade.Text= resposta.results.Humidity.ToString();
+        Label=Chuva.Text= resposta.results.Chuva.ToString();
+		LabelHumidade.Text= resposta.results.Humidade.ToString();
+        LabelAmanhecer.Text= resposta.results.Amanhecer;
+        LabelAnoitecer.Text= resposta.results.Amanhecer;
+		LabelSol.Text= resposta.results.Sol;
+		LabelForça.Text= resposta.results.Força;
+		LabelDireção.Text= resposta.results.Descrição;
         LabelVento.Text= resposta.results.Rain;
-        LabelAmanhecer.Text= resposta.results.Sunrise;
+        LabelFase.Text= resposta.results.Sunrise;
         LabelAnoitecer.Text= resposta.results.Sunset;
         LabelVelocidade.Text= resposta.results. Wind_Speedy.ToString();
 		LabelDireção.Text= resposta.results.Wind_Direction.ToString();
 		LabelLua.Text= resposta.results.moon_phase;
     }
-    async void AtualizTempo()
-	{ 
+    async void AtualizaTempo();
+	{
 		try
-		{
+		
 			var httpCliente=new HttpClient();
 			var response=await HttpClient.GetAsync(url);
-			if (response.IsSucessStatusCode)
-		}
-		{
+			if (response.IsSucessStatusCode);
+		
+		
+		
 			string content=WebResponse.Content.ReadAsStringAsyng();
-			Resposta = JsonSerialier.Deseialize<Resposta>(content);
-		}
+			Resposta = JsonSerialier.Deserialize<Resposta>(content);
+		
 	}
+	
 	
 
